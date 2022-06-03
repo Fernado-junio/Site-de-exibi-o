@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 *{
-    font-family: 'Lato', sans-serif;
     overflow-x: hidden;
 }
+
 *::-webkit-scrollbar {
     width: 8px;
     background-color: black;
@@ -32,6 +32,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
+    font-family: 'Lato', sans-serif;
     margin: 0px;
     padding: 0px;
     background: rgb(20,8,213);
@@ -60,6 +61,7 @@ header div span,header div a{
 }
 header div span:hover,header div a:hover{
     font-weight: bold;
+    text-decoration: underline;
 }
 header nav{
     margin-right: 25px;
@@ -72,26 +74,32 @@ header nav a{
 }
 header nav a:hover{
     font-weight: bold;
+    text-decoration: underline;
 }
 main {
     position: relative;
     top: 8%;
+    padding-bottom: 100px;
 }
-#atuais{
+section{
     margin-left: 80px;
 }
-#atuais h2{
+section h1{
     margin-left: 25px;
     font-size: 30px;
 }
-#atuais-row{
+section h2{
+    margin-left: 25px;
+    font-size: 20px;
+}
+#main-row{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     max-width: 1400px;
 }
 
-.atuais-col{
+.main-col{
     margin-left: 10px;
     border: 1px solid rgb(99, 99, 99);
     border-radius: 20px;
@@ -100,8 +108,12 @@ main {
     background-color: white;
     max-width: 160px;
     margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
-#atuais-row > .atuais-col{
+#main-row > .main-col{
     flex: 1 1 160px;
 }
 .linha{
@@ -110,4 +122,16 @@ main {
     width: 80%;
     margin: 0 auto;
     border-bottom: 1px solid rgb(99, 99, 99);
+    margin-bottom: 20px;
+}
+.main-col img{
+    margin-top: 10px;
+    width: 80%;
+    height: 70%;
+}
+.main-col span{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    
 }
