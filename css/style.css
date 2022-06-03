@@ -107,11 +107,13 @@ section h2{
     height: 180px;
     background-color: white;
     max-width: 160px;
+    min-width: 160px;
     margin-top: 10px;
     text-align: center;
     text-decoration: none;
     color: black;
     cursor: pointer;
+    overflow: hidden;
 }
 #main-row > .main-col{
     flex: 1 1 160px;
@@ -128,10 +130,51 @@ section h2{
     margin-top: 10px;
     width: 80%;
     height: 70%;
+    border-radius: 60px;
+    padding-bottom: 5px;
 }
-.main-col span{
-    margin-top: 10px;
+.title{
     font-weight: bold;
     font-size: 18px;
-    
+}
+.descricao{
+    position: relative;
+    top: 20px;
+    transition: 0.8s;
+    background-color: transparent;
+    height: 100%;
+    font-size: 16px;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.main-col:hover .descricao{
+    background-color: rgb(49, 49, 49);
+    top: -120px;
+    transition: 0.8s;
+}
+#menuButton{
+    display: none;
+}
+@media screen and (max-width: 700px) {
+
+    header {
+        
+        justify-content: flex-start;
+    }
+    header h1{
+        margin-left: 20px;
+    }
+    #menuButton{
+
+        display: block;
+        margin: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    section{
+        margin-left: 20px;
+    }
 }

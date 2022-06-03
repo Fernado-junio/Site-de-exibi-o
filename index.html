@@ -11,18 +11,20 @@
 </head>
 <body>
     <header >
-        <div>
+        <span id="menuButton" style="overflow: hidden; font-size: 35px;" class="material-symbols-outlined ">menu</span>
+
+        <div class="menu">
             <span style="margin-left: 0px;" title="Busque com mais velocidade o que deseja visualizar através desse filtro.">Categorias</span>
-            <span title="Aqui são exibidas as novidades sobre meu trabalho seja novos produtos, ofertas, entre outros.            ">Novidades</span>
+            <span title="Aqui são exibidas as novidades sobre meu trabalho seja novos produtos, ofertas, entre outros.">Novidades</span>
             <a href="#atuais" title="Ao clicar te levara para os meus projetos atuais.">Atuais</a>
         </div>
         <h1>Galeria</h1>
-        <nav>
+        <nav class="menu">
             <a href="/" style="margin-left: 0px;" title="Pagina inicial">Galeria</a>
             <a href="" title="Um pouco sobre minha historia e sobre como comecei nessa área.">Sobre</a>
             <a href="" title="Aqui e possível encontrar meu numero, e-mail ou ate mesmo mandar uma mensagem diretamente pelo site.">Contato</a>
         </nav>
-        
+       
     </header>
     <hr>
     <main>
@@ -31,17 +33,24 @@
             <div id="main-row">
                 <div class="main-col" onclick="window.open('https://spotify-clone-bd.herokuapp.com') ">
                     <img src="img/spotify.png">
-                    <span>Clone do Spotify</span>
+                    <span class="title">Clone do Spotify</span>
+                    <div class="descricao">
+                        <span>test <br>descricao</span>
+                    </div>
                 </div>
             </div>
         </section>
         <div class="linha"></div>
         <section id="trabalhos">
-            <h1 title="">Trabalhos</h1>
+            <h1 title="Abaixo aparece meus trabalho em empresa ou para clientes">Trabalhos</h1>
             <h2>2022</h2>
             <div id="main-row">
-                <div class="main-col">
-
+                <div class="main-col" onclick="window.open('https://infoeduc.com.br')" >
+                    <img src="img/infoeduc.jpg">
+                    <span class="title">InfoEduc </span>
+                    <div class="descricao">
+                        <span> test <br>descricao</span>
+                    </div>
                 </div>
             </div>
             <h2>2021</h2>
@@ -49,11 +58,7 @@
         <div class="linha"></div>
         <section>
             <h1 title="">Projetos Pessoais</h1>
-            <div id="main-row">
-                <div class="main-col">
-
-                </div>
-            </div>
+            
         </section>
     </main>
     <footer>
