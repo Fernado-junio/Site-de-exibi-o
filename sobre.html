@@ -1,22 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3NXDEZ3QY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z3NXDEZ3QY');
-</script>
-<link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Site para exibir e documentar trabalhos passados e para contato com clientes">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Galeria</title>
 </head>
 <body>
-    
+    <header >
+        <span translate="no" id="menuButton" style="overflow: hidden; font-size: 35px;" class="material-symbols-outlined ">menu</span>
+
+        <div class="menu">
+            <a href="#" onclick="categorias()"><span style="margin-left: 0px;" title="Busque com mais velocidade o que deseja visualizar através desse filtro.">Categorias</span><span class="material-symbols-outlined" id="abrir" translate="no" style="overflow: hidden;  position: relative; left: -16px; top:7px;">expand_more</span><span id="fechar" class="material-symbols-outlined" translate="no" style="overflow: hidden; display: none; position: relative; left: -16px; top:7px;">expand_less</span></a>
+            <a href="#" style="position: relative; left: -40px;"><span  title="Aqui são exibidas as novidades sobre meu trabalho seja novos produtos, ofertas, entre outros.">Novidades</span></a>
+            <a style="position: relative; left: -40px;" href="#atuais" title="Ao clicar te levara para os meus projetos atuais.">Atuais</a>
+        </div>
+        <h1>Galeria</h1>
+        <nav class="menu" style="margin-right: 30px;">
+            <a href="index.html" style="margin-left: 0px;" title="Pagina inicial">Galeria</a>
+            <a href="sobre.html" title="Um pouco sobre minha historia e sobre como comecei nessa área.">Sobre</a>
+            <a href="contato.html" title="Aqui e possível encontrar meu numero, e-mail e outros meios de comunicação.">Contato</a>
+        </nav>
+    </header>
+    <hr>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
+
+
