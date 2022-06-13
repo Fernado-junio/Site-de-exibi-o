@@ -242,7 +242,7 @@ a:hover {
         overflow-y: hidden;
     }
     #mobile.active #menu {
-        height: calc(100vh - 413px);
+        height: calc(100vh - 300px);
         visibility: visible;
         overflow: hidden;
     }
