@@ -244,7 +244,7 @@ a:hover {
     #mobile.active #menu {
         height: calc(100vh - 300px);
         visibility: visible;
-        overflow: hidden;
+        overflow: auto;
     }
     #menu a {
     padding: 1rem 0;
