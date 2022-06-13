@@ -36,7 +36,7 @@ body{
     margin: 0px;
     padding: 0px;
     background: rgb(20,8,213);
-    background: linear-gradient(45deg, rgba(20,8,213,0.4) 30%, rgba(0,212,255,0.6) 100%)fixed; 
+    background: linear-gradient(45deg, rgba(97, 8, 213, 0.637) 40%, rgba(0,212,255,0.6) 100%)fixed; 
     width: 100vw;
     height: 100vh;
 }

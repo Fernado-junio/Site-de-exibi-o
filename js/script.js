@@ -4,6 +4,44 @@ function not() {
 }
 
 
+
+
+
+var menuButton = document.getElementById('menuButton')
+var clicksMenu = 1
+var mobile = document.getElementById('mobile')
+function menu(){
+    clicks++
+    if (clicks == 0) {
+        mobile.style.display = 'block'
+    }
+    if (clicks == 1) {
+        mobile.style.display = 'none'
+    }
+    if (clicks == 2) {
+        mobile.style.display = 'block'
+        clicks = 0
+    }
+}
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('mobile');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+
 var abrir = document.getElementById('abrir')
 var fechar = document.getElementById('fechar')
 var clicks = 1
@@ -44,7 +82,7 @@ function idade(dia, mes, ano) {
         return idadeAno
     }
 }
-document.getElementById('idade').innerText = idade(30,09,2005)
+document.getElementById('idade').innerText = idade(30,09,2005);
 
 
 

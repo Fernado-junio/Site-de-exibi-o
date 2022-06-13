@@ -11,7 +11,19 @@
 </head>
 <body onload="not()">
     <header >
-        <span translate="no" id="menuButton" style="overflow: hidden; font-size: 35px;" class="material-symbols-outlined ">menu</span>
+        <nav id="mobile">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li class="ir"><a href="#">Categorias</a></li>
+                <li class="ir"><a href="#">Novidades</a></li>
+                <li class="ir"><a href="sobre.html">Sobre</a></li>
+                <li class="ir"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+
 
         <div class="menu">
             <a href="#" onclick="categorias()"><span style="margin-left: 0px;" title="Busque com mais velocidade o que deseja visualizar através desse filtro.">Categorias</span><span class="material-symbols-outlined" id="abrir" translate="no" style="overflow: hidden;  position: relative; left: -16px; top:7px;">expand_more</span><span id="fechar" class="material-symbols-outlined" translate="no" style="overflow: hidden; display: none; position: relative; left: -16px; top:7px;">expand_less</span></a>
@@ -24,8 +36,9 @@
             <a href="sobre.html" title="Um pouco sobre minha historia e sobre como comecei nessa área.">Sobre</a>
             <a href="contato.html" title="Aqui e possível encontrar meu numero, e-mail e outros meios de comunicação.">Contato</a>
         </nav>
-        
+        <div id="ajuste">ajuste</div>
     </header>
+
     <div id="notificacao"></div>
     <hr>
     <main>
