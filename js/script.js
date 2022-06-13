@@ -1,5 +1,5 @@
 function not() {
-    document.getElementById('notificacao').innerHTML = `<div id="not" style="position: absolute;color:white; opacity: 100; top: 10%; left: 0; background-color: red; width: 220px; height: 50px; border-radius: 15px; text-align: center; transition: 0.5s;"><span style="text-align: center; position: relative; top: 8px;">Este site não esta finalizado e pode apresentar defeitos</span></div>`
+    document.getElementById('notificacao').innerHTML = `<div id="not" style="position: absolute;color:white; opacity: 100; top: 10%; left: 1%; background-color: red; width: 220px; height: 50px; border-radius: 15px; text-align: center; transition: 0.5s;"><span style="text-align: center; position: relative; top: 8px;">Este site não esta finalizado e pode apresentar defeitos</span></div>`
     setInterval(()=>{document.getElementById('not').style.left = "-100%";document.getElementById('not').style.opacity = '0'},3500)
 }
 
@@ -29,12 +29,14 @@ function categorias(){
 
 
 
+//sobre
+
 
 function idade(dia, mes, ano) {
     let idadeAno = new Date().getFullYear() - ano;
     var Mes = new Date().getMonth() + 1
     var Dia = new Date().getDate()
-    if (mes > Mes || mes == Mes && dia > Dia) {
+    if (mes > Mes  || mes == Mes && dia > Dia) {
         return idadeAno - 1
     }
 
@@ -42,4 +44,8 @@ function idade(dia, mes, ano) {
         return idadeAno
     }
 }
+document.getElementById('idade').innerText = idade(30,09,2005)
+
+
+
 
